@@ -115,10 +115,6 @@ The tool generates name variations in the following priority order:
 
 This project is licensed under the MIT License - see the [LICENSE](https://github.com/inject3r/WPFileScan/blob/master/LICENSE) file for details.
 
-## GitHub
-
-https://github.com/inject3r/WPFileScan
-
 ## Disclaimer
 
 This tool is for educational and authorized testing purposes only. Use responsibly and only on systems you have permission to test. The authors are not responsible for any misuse or damage caused by this tool.
