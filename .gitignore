@@ -1,0 +1,61 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+dist/
+build/
+*.egg
+*.egg-info/
+*.whl
+
+# Virtual environments
+venv/
+env/
+ENV/
+.venv/
+.virtualenv/
+pyenv/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+*.sublime-project
+*.sublime-workspace
+.DS_Store
+
+# Project specific
+logs/
+downloads/
+*.log
+*.txt
+!requirements.txt
+!LICENSE
+!README.md
+progress.json
+found_files_*.txt
+
+# Docker
+Dockerfile
+Dockerfile.dev
+docker-compose.yml
+.dockerignore
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+.mypy_cache/
+.ruff_cache/
+
+# OS files
+.DS_Store
+Thumbs.db
+*.tmp
+*.bak

@@ -4,6 +4,10 @@
 
 WPFileScan is an open source penetration testing tool that automates the process of discovering WordPress uploaded files through intelligent brute force techniques. It comes with a powerful name variation engine, support for multiple file extensions, concurrent request handling, resume functionality, and a broad range of features including proxy support, Tor anonymity, custom headers, and file download capabilities.
 
+## Screenshot
+
+![CharList Screenshot](https://raw.githubusercontent.com/inject3r/WPFileScan/master/screenshot.jpg)
+
 ## Installation
 
 You can download the latest tarball by clicking [here](https://github.com/inject3r/WPFileScan/tarball/master) or latest zipball by clicking [here](https://github.com/inject3r/WPFileScan/zipball/master).
