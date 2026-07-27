@@ -1,0 +1,32 @@
+FROM python:3.11-slim
+
+LABEL maintainer="inject3r"
+LABEL description="WPFileScan - Development Environment"
+LABEL version="1.0.0"
+
+WORKDIR /app
+
+# Install system dependencies including development tools
+RUN apt-get update && apt-get install -y \
+    git \
+    curl \
+    vim \
+    nano \
+    ca-certificates \
+    && rm -rf /var/lib/apt/lists/*
+
+# Copy requirements
+COPY requirements.txt .
+
+# Install dependencies
+RUN pip install --no-cache-dir -r requirements.txt \
+    && pip install --no-cache-dir pytest pytest-cov black flake8 mypy
+
+# Copy application
+COPY . .
+
+# Create directories
+RUN mkdir -p /app/logs /app/downloads
+
+ENTRYPOINT ["python", "main.py"]
+CMD ["-h"]

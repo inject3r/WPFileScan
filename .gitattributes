@@ -1,0 +1,101 @@
+* text=auto
+
+# Source code
+*.py text diff=python
+*.pyi text diff=python
+*.pyx text
+*.pyw text
+
+# Configuration files
+*.json text
+*.yml text
+*.yaml text
+*.toml text
+*.cfg text
+*.conf text
+*.ini text
+*.xml text
+
+# Documentation
+*.md text diff=markdown
+*.rst text
+*.txt text
+*.html text
+*.css text
+*.js text
+
+# Shell scripts
+*.sh text eol=lf
+*.bash text eol=lf
+*.zsh text eol=lf
+
+# Batch files
+*.bat text eol=crlf
+*.cmd text eol=crlf
+
+# Makefile
+Makefile text eol=lf
+makefile text eol=lf
+*.mk text eol=lf
+
+# Docker
+Dockerfile text eol=lf
+*.dockerfile text eol=lf
+
+# Git files
+.gitignore text
+.gitattributes text
+.gitmodules text
+
+# Logs
+*.log text
+*.out text
+
+# Binary files
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
+*.pdf binary
+*.zip binary
+*.rar binary
+*.7z binary
+*.tar.gz binary
+*.gz binary
+
+# Archives
+*.tar binary
+*.tgz binary
+*.bz2 binary
+
+# Media
+*.mp3 binary
+*.mp4 binary
+*.avi binary
+*.mov binary
+*.wav binary
+
+# Database
+*.sqlite binary
+*.db binary
+
+# Compiled files
+*.pyc binary
+*.pyo binary
+*.pyd binary
+*.so binary
+*.dll binary
+*.exe binary
+*.pdb binary
+
+# IDE files
+*.iml text
+*.idea/ text
+.vscode/ text
+
+# macOS
+.DS_Store binary
+
+# Windows
+Thumbs.db binary

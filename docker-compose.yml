@@ -1,0 +1,32 @@
+version: "3.8"
+
+services:
+  wpfilescan:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: wpfilescan
+    volumes:
+      - ./logs:/app/logs
+      - ./downloads:/app/downloads
+      - ./config.json:/app/config.json:ro
+    environment:
+      - PYTHONUNBUFFERED=1
+    stdin_open: true
+    tty: true
+    command: -h
+
+  wpfilescan-dev:
+    build:
+      context: .
+      dockerfile: Dockerfile.dev
+    container_name: wpfilescan-dev
+    volumes:
+      - ./:/app
+      - ./logs:/app/logs
+      - ./downloads:/app/downloads
+    environment:
+      - PYTHONUNBUFFERED=1
+    stdin_open: true
+    tty: true
+    command: -h
